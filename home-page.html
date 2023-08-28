@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo list</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500&family=Roboto:ital,wght@0,300;0,500;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/body.css">
+  </head>
+  <body>
+    <div id="mainPage">
+      <div class="header-grid">
+        <p class="title">Welcome</p>
+        
+        <a class="urgent-header">
+          <button class="urgent-events-button js-urgent-items-button"><img src="icons/Exclamation_mark.png"></button>
+        </a>
+      </div>
+  
+      <div class="body-grid">
+        <p class="introduction">Write your todo's...</p>
+      </div>
+      
+      <div class="whole-todo-grid">
+        <div class="todo-input-grid">
+          <input placeholder="Todo name" class="js-name-input name-input">
+          <input type="date" class="js-due-date-input due-date-input date-input">
+          <button class="add-todo-button js-add-todo-button">
+            Add
+          </button>
+        </div>
+    
+        <div class="js-todo-list todo-grid"></div>
+        <a>
+          <button class="checked-button js-checked-button">
+            See checked todos
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <div id="checkedItems">
+      <div class="checked-header">
+        <p class="header-title">Checked items</p>
+        <a class="header-back-button">
+          <button class="back-button js-back-button">Back</button>
+        </a>
+      </div>
+      <div class="js-checked-todo-list checked-todo-grid">
+      </div>
+    </div>
+
+    <div id="urgentItems">
+      <div class="urgent-items-header">
+        <p class="header-title">Urgent items</p>
+        <a class="header-back-button">
+          <button class="urgent-back-button js-urgent-back-button">Back</button>
+        </a>
+      </div>
+      <div class="js-urgent-todo-list urgent-todo-grid">
+      </div>
+    </div>
+    
+    <script type="module" src="scripts/home-page.js"></script>
+
+  </body>
+</html>

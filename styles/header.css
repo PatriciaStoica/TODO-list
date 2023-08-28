@@ -1,0 +1,70 @@
+.header-grid {
+  height: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.urgent-header {
+  display: flex;
+  align-items: center;
+  position: relative;
+  right: 0px;
+}
+
+.urgent-events-button {
+  margin-right: 30px;
+  background-color: rgb(83, 116, 183);
+
+  cursor: pointer;
+
+  border: none;
+  border-radius: 20px;
+
+  position: absolute;
+  right: 0px;
+}
+
+.urgent-events-button:hover {
+  background-color: rgb(95, 119, 172);
+}
+
+.urgent-events-button img{
+  height: 30px;
+}
+
+.title {
+  font-weight: 700;
+  position: relative;
+  left: 0px;
+
+  margin-left: 30px;
+  font-size: 30px;
+}
+
+.header-title {
+  font-weight: 600;
+  font-size: 30px;
+  
+  margin-top: 45px;
+  margin-left: 30px;
+
+  color: rgb(100, 74, 136);
+}
+
+.checked-header,
+.urgent-items-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.header-back-button {
+  position: relative;
+}
+
+.back-button,
+.urgent-back-button {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
