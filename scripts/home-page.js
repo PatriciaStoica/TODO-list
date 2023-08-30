@@ -205,3 +205,17 @@ function showUrgentTodoList(urgentList) {
       });
     });
 }
+
+
+function APIcall() {
+  console.log("making API call...");
+  const userAction = async () => {
+    const response = await fetch('https://localhost:7170/api/todos');
+    const myJson = await response.json(); //extract JSON from the http response
+    console.log(myJson);
+  }
+  userAction();
+}
+
+APIcall();
+
